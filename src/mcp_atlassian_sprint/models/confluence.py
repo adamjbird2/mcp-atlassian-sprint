@@ -15,7 +15,7 @@ Key models:
 Usage examples:
 
     # Get a typed page model
-    from mcp_atlassian.confluence import ConfluenceClient
+    from mcp_atlassian_sprint.confluence import ConfluenceClient
 
     client = ConfluenceClient.from_env()
     page = client.get_page_content("123456789")

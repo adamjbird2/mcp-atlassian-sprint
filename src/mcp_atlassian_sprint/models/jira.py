@@ -15,7 +15,7 @@ Key models:
 Usage examples:
 
     # Get a typed issue model
-    from mcp_atlassian.jira import JiraClient
+    from mcp_atlassian_sprint.jira import JiraClient
 
     client = JiraClient.from_env()
     issue = client.get_issue("PROJECT-123")

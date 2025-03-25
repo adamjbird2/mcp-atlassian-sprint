@@ -4,8 +4,8 @@ import logging
 
 from atlassian import Jira
 
-from mcp_atlassian.preprocessing import JiraPreprocessor
-from mcp_atlassian.utils import configure_ssl_verification
+from mcp_atlassian_sprint.preprocessing import JiraPreprocessor
+from mcp_atlassian_sprint.utils import configure_ssl_verification
 
 from .config import JiraConfig
 

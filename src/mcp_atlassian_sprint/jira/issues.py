@@ -461,7 +461,7 @@ class IssuesMixin(UsersMixin):
                     )
                     try:
                         # Delegate to EpicsMixin.update_epic_fields
-                        from mcp_atlassian.jira.epics import EpicsMixin
+                        from mcp_atlassian_sprint.jira.epics import EpicsMixin
 
                         return EpicsMixin.update_epic_fields(self, issue_key, kwargs)
                     except Exception as update_error:
@@ -497,7 +497,7 @@ class IssuesMixin(UsersMixin):
         # Since JiraFetcher inherits from both IssuesMixin and EpicsMixin,
         # this will correctly use the prepare_epic_fields method from EpicsMixin
         # which implements the two-step Epic creation approach
-        from mcp_atlassian.jira.epics import EpicsMixin
+        from mcp_atlassian_sprint.jira.epics import EpicsMixin
 
         EpicsMixin.prepare_epic_fields(self, fields, summary, kwargs)
 
